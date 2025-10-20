@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 50%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: navy;
+  color: white;
+  margin: 50px auto;
+  border-radius: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 35px;
+  &.none{
+    display: none !important;
+  }
+  .firstnameContainer,
+  .lastnameContainer,
+  .degreeContainer,
+  .taxContainer,
+  .clockContainer {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    flex-flow: row-reverse nowrap;
+    input {
+        width: 25%;
+        border-radius: 16px;
+        box-sizing: border-box;
+        padding: 8px;
+        font-size: 14px;
+        outline: unset;
+        border: unset;
+        transition: 500ms;
+        &:focus {
+          transform: scale(1.2);
+        }
+      }
+      label {
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      select {
+        width: 40%;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-size: 16px;
+        border-radius: 16px;
+        outline: unset;
+        border: unset;
+      }
+      
+  }
+  .degreeContainer {
+    flex-flow: row nowrap;
+  }
+  .closeBtn {
+    all: unset;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: crimson;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    align-self: flex-end;
+  }
+  .calc {
+    all: unset;
+    padding: 10px;
+    background-color: rgb(20, 191, 88);
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin: 20px;
+    border: 0.5px solid rgb(20, 191, 88);
+    transition: 500ms;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      border: 0.5px solid rgb(20, 191, 88);
+      color: rgb(20, 191, 88);
+      transform: scale(1.2);
+    }
+  }
+}
+.btn {
+  all: unset;
+  padding: 10px;
+  background-color: navy;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin: 20px;
+  border: 0.5px solid navy;
+  transition: 500ms;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+    border: 0.5px solid navy;
+    color: navy;
+    transform: scale(1.2);
+  }
+  &.disable{
+    background-color: gray;
+    border: 0.5px solid gray;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+.result{
+    background-color: aqua;
+    color: black;
+}
+
